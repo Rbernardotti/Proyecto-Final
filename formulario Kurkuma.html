@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--Encargue Online--</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<script>
+	var bPreguntar = true;
+ 
+	window.onbeforeunload = preguntarAntesDeSalir;
+ 
+	function preguntarAntesDeSalir() {
+		var respuesta;
+ 
+		if ( bPreguntar ) {
+			respuesta = confirm ( '¿Seguro que quieres salir?' );
+ 
+			if ( respuesta ) {
+				window.onunload = function () {
+					return true;
+				}
+			} else {
+				return false;
+			}
+		}
+	}
+</script>
+
+<body>
+
+    <h1><u>
+            Formulario de Compra
+        </u></h1>
+
+    <form action="" method="">
+        <b>Nombre:</b> <input type="text" name="Nombre" placeholder="Nombre">
+        <br>
+        <b>Apellido:</b> <input type="text" name="Apellido" placeholder="Apellido">
+        <br>
+        <b>Dirección:</b> <input type="text" name="Dirección" placeholder="Dirección"> <br>
+        <br>
+
+        Indique que productos que quiere comprar: <br>
+        <br>
+        <input type="checkbox" name="Hamburguesas Veggie"> *Combo Hamburguesas Veggie. <br>
+        <select id="Sabores" name="Sabores" ;> <br>
+            <option value="Sabores"> Sabores </option>
+            <option value="Zapallito"> Yamani y Zapallito </option>
+            <option value="Remolacha"> Yamani y Remolacha </option>
+            <option value="Verdura"> Yamani y Verdura </option>
+            <option value="Lenteja"> Lentejas </option>
+            <option value="Garbanzo"> Garbanzo </option>
+            <option value="Avena"> Avena y Calabaza </option>
+        </select> <br>
+        <br>
+        <input type="checkbox" name="Zapallito"> Yamani y Zapallito. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Remolacha"> Yamani y Remolacha. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Verdura"> Yamani y Verdura. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Lenteja"> Lentejas. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Garbanzo"> Garbanzo. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Avena y Calabaza"> Avena y Calabaza. <input type="number"> Cantidad <br>
+        <br>
+        <input type="checkbox" name="Hamburguesas de Pollo"> *Combo Hamburguesas de Pollo. <br>
+        <select id="Sabores" name="Sabores" ;> <br>
+            <option value="Sabores"> Sabores </option>
+            <option value="Verdura"> Pollo y Verdura </option>
+            <option value="Curry"> Pollo al Curry </option>
+            <option value="Tomate y Albahaca"> Pollo, Tomate y Albahaca </option>
+            <option value="Puerro"> Pollo, Puerro y Zanahoria </option>
+            <option value="Provenzal"> Pollo a la Provenzal </option>
+        </select> <br>
+        <br>
+        <input type="checkbox" name="Pollo y Verdura"> Pollo y Verdura. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Pollo al Curry"> Pollo al Curry. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Pollo, Albahaca y Tomate"> Pollo, Albahaca y Tomate. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Pollo, Puerro y Zanahoria"> Pollo, Puerro y Zanahoria. <input type="number"> Cantidad <br>
+        <input type="checkbox" name="Pollo a la Provenzal"> Pollo a la Provenzal. <input type="number"> Cantidad <br>
+        <br>
+        <br>
+        <input type="checkbox" name="Milanesas de Berenjena"> *Milanesas de Berenjena 1/2 Kg.  <input type="number"> <br> 
+        <input type="checkbox" name="Milanesas de Zucchini"> *Milanesas de Zucchini 1/2 Kg. <input type="number"> <br>
+        <input type="checkbox" name="Falafels"> *Falafels (Porcion de 6). <input type="number"> <br>
+        <input type="checkbox" name="Croquetas de Remolacha"> *Croquetas de Remolacha (Porcion de 6).<input type="number"><br>
+        <br>
+        <input type="submit" value="Comprar"> <input type="reset" value="Cancelar"> <br>
+        <br>
+        Dejar un comentario: <br>
+        <textarea cols="20" rows="5"> </textarea> <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Cancelar">
+    </form>
+
+    <br>
+
+    
+<a href="file:///C:/Users/usuario/Desktop/Revolucion%20Digital/Kurkuma/index.html">Volver al inicio</a>
+
+</body>
+
+</html>

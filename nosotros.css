@@ -1,0 +1,23 @@
+
+body {
+    background-image: url("WallpaperKurkuma.jpeg");
+}
+
+
+table {
+    width: 50em;
+    height: 30em;
+text-align: center;
+color: white;
+position: relative;
+margin-left: 380px;
+margin-top: 200px;
+border-color: white;
+}
+
+.atras-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
